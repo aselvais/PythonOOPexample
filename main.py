@@ -1,5 +1,18 @@
+"""
+Main file instanciating the objects from the classes and
+making them interacting with each others
+"""
 from libs.animals.Dog import Dog
 from libs.animals.Duck import Duck
+from libs.animals.AnimalArmy import AnimalArmy
+
+print("\n\n")
+
+scoobydoo = Dog()
+scoobydoo.set_name('Scooby Doo')
+scoobydoo.say_my_name()
+scoobydoo.talk()
+scoobydoo.show_health()
 
 print("\n\n")
 
@@ -24,3 +37,20 @@ for i in range(17):
     fido.show_living_status()
 
 print("\n")
+
+scoobydoo.attack(ducky)
+
+print("\n")
+
+duckArmy = AnimalArmy('duck', 10)
+
+print("\n")
+
+duckArmy.attack(scoobydoo)
+
+print("\n")
+
+scoobydoo.show_living_status()
+scoobydoo.talk()
+scoobydoo.talk()
+scoobydoo.talk()

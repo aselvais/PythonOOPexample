@@ -7,8 +7,12 @@ digraph hierarchy {
     Animals[label="{Animals|_name\n_health\n_damage\n_alive|__init__()\nset_name(name)\nsay_my_name()\ntalk()\nshow_health()\nattack(enemy)\nshow_living_status()}"]
     Dog[label="{Dog|_health=50\n_damage=20|__init__()\ntalk()}"]
     Duck[label="{Duck|_health=10\n_damage=3|__init__()\ntalk()}"]
+    AnimalArmy[label="{AnimalArmy|animals=[]|__init__(animal_type, army_size)\nattack(enemy)}"]
 
+    AnimalArmy -> Animals [constraint=false, arrowtail=odiamond]
+    
     Dog -> Animals
     Duck -> Animals
+
 
 }
