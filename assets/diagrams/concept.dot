@@ -1,0 +1,4 @@
+digraph { 
+    animals -> dog;
+    animals -> duck;
+}
