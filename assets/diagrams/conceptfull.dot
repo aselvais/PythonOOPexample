@@ -1,21 +1,14 @@
 digraph hierarchy {
+    
     rankdir = BT
     node[shape=record,style=filled,fillcolor=gray95,fontname="helvetica"]
     edge[dir=back, arrowtail=empty,]
 
-    Animals[label="{Animals|_name\n_health\n_damage\n_alive|__init__()\nset_name(, name='')\nsay_my_name()\ntalk()\nshow_health()\nattack(, enemy)\nshow_living_status()}"]
-    Dog[label="{Dog|_health = 50\n_damage = 20|__init__()\ntalk()}"]
-    Duck[label="{Duck|_health = 10\n_damage = 3|__init__()\ntalk()}"]
+    Animals[label="{Animals|_name\n_health\n_damage\n_alive|__init__()\nset_name(name)\nsay_my_name()\ntalk()\nshow_health()\nattack(enemy)\nshow_living_status()}"]
+    Dog[label="{Dog|_health=50\n_damage=20|__init__()\ntalk()}"]
+    Duck[label="{Duck|_health=10\n_damage=3|__init__()\ntalk()}"]
 
     Dog -> Animals
     Duck -> Animals
 
 }
-
-
-
-
-
-
-
-
