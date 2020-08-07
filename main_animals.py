@@ -42,7 +42,7 @@ scoobydoo.attack(ducky)
 
 print("\n")
 
-duckArmy = AnimalArmy('duck', 10)
+duckArmy = AnimalArmy('Duck', 10)
 
 print("\n")
 

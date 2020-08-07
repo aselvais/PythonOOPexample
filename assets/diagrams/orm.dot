@@ -1,0 +1,14 @@
+digraph hierarchy {
+    
+    rankdir = BT
+    node[shape=record,style=filled,fillcolor=gray95,fontname="helvetica"]
+    edge[dir=back, arrowtail=empty,]
+
+    User[label="{User|first_name\nlast_name\ndate_of_birth\nemail\nphone_number\naccount_sum\n|__init__(row=[])\nget_full_name(name)}"]
+    UserCollection[label="{UserCollection|_collection=[]|\nappend(u)}"]
+
+    
+    UserCollection -> User [arrowtail=odiamond]
+
+
+}

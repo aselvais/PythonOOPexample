@@ -15,17 +15,17 @@ class AnimalArmy:
 
     animals = []
 
-    def __init__(self, animal_type='duck', army_size=10):
+    def __init__(self, animal_type='Duck', army_size=10):
         """Generates an army of animals
 
         Args:
-            animal_type (str, optional): duck or dog. Defaults to 'duck'.
+            animal_type (str, optional): duck or dog. Defaults to 'Duck'.
             army_size (int, optional): Number of animal in the army. Defaults to 10.
         """
         for i in range(army_size):
-            if animal_type == 'duck':
+            if animal_type == 'Duck':
                 _a = Duck()
-            if animal_type == 'dog':
+            if animal_type == 'Dog':
                 _a = Dog()
             _a.set_name(animal_type + str(i))
             self.animals.append(_a)
