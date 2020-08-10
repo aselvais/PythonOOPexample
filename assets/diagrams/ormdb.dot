@@ -1,0 +1,9 @@
+digraph hierarchy {
+    
+    rankdir = BT
+    node[shape=record,style=filled,fillcolor=gray95,fontname="helvetica"]
+    edge[dir=back, arrowtail=empty,]
+
+    Users[label="{Users|first_name\nlast_name\ndate_of_birth\nemail\nphone_number\naccount_sum\n}"]
+
+}

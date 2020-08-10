@@ -1,5 +1,7 @@
 # PythonOOPexample
 
+## 1. Animal fighting game Example
+
 This is a simple fun example of Object Oriented programming in Python that
 I have used for introduction trainings to OOP.
 
@@ -151,3 +153,30 @@ Scooby Doo is alive!!!!
 *** WOOOFFF!!!!!!! ***
 *** WOOOFFF!!!!!!! ***
 ```
+
+
+## 2. ORM Example/introduction
+
+Now we know how to build objects and collection of objects (with the animal army), this will help us undertand the ORM technique.
+
+Here is the definition of ORM from Wikipedia (https://en.wikipedia.org/wiki/Object-relational_mapping):
+
+*"Object-relational mapping (ORM, O/RM, and O/R mapping tool) in computer science is a programming technique for converting data between incompatible type systems using object-oriented programming languages. This creates, in effect, a "virtual object database" that can be used from within the programming language."*
+
+So, in other words, ORM is just a "mapping" of a DB to an OOP model.
+
+We are going to do that with one table as an example.
+
+Let's consider a "Users" table:
+
+![alt text](assets/diagrams/png/ormdb.dot.png "Full class diagram")
+
+This would be our table and columns in our database. For the sake of code simplicity, we will just store data in a CSV file and load it to an simple ORM representation. In the future, we could have different "connectors" and load data from a DB instead of a CSV file, and our OOP/ORM code would just stay the same.
+
+In our ORM model, the class diagram will look like this:
+
+![alt text](assets/diagrams/png/orm.dot.png "Full class diagram")
+
+We have a "User" class representing heach row; and a "UserCollection" class representing the "Users" table (a table is a collection of rows.)
+
+You can run the main_orm.py script and see what is happening.
